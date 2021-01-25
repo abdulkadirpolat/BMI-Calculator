@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vücut Kitle Endeksi Hesaplama</title>
+    <link rel="stylesheet" href="app.css" />
+    <script
+      src="https://kit.fontawesome.com/42b86c7a35.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <form class="calculation">
+        <h1>Vücut Kitle Endeksi Hesaplama</h1>
+        <div>
+          <label class="cm" for="size">Boyunuz: </label>
+          <input type="number" id="size" placeholder="Örn:170cm" /> cm
+        </div>
+        <div>
+          <label for="weight"> Kilonuz:</label>
+          <input type="number" id="weight" placeholder="Örn:70kg" /> kg
+        </div>
+        <button type="submit">Hesapla</button>
+
+        <div class="alert-Message"></div>
+        <ul class="list-BMI">
+          <li>0 ila 18,4 BMI: Zayıf.</li>
+          <li>18.5 ila 24.9 BMI: Normal.</li>
+          <li>25 ila 29.9 BMI: Fazla Kilolu.</li>
+        </ul>
+      </form>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
