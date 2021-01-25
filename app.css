@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 30px;
+    background-color: rgb(83, 129, 172);
+    padding: 0.6em;
+    width: 100%;
+    color: rgb(236, 236, 236);
+    text-align: center;
+
+}
+
+ 
+.container {
+
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: rgb(219, 255, 233);
+
+
+
+}
+
+.alert-Message {
+    height: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.alert-success {
+    background-color: rgb(43, 255, 0);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: xx-large;
+}
+
+
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background: none;
+    background-color: rgb(82, 88, 179);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    transition: 300ms;
+    background-color: rgb(109, 6, 226);
+    padding: 10px 2em;
+}
+
+.calculation div:not(.alert-Message) {
+    margin-right: 40px;
+}
+
+form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: rgba(103, 154, 196, 0.925);
+    box-shadow: rgba(209, 227, 233, 0.678) 7px 7px;
+    width: 350px;
+    height: 500px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+
+}
+
+input {
+    padding: 0.5em;
+    max-width: 20vh;
+
+}
+
+.list-BMI {
+
+    background-color: rgb(178, 194, 120);
+    align-items: flex-start;
+    width: 100%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+li {
+    margin-left: 35px;
+    width: 100%;
+}
