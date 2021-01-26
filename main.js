@@ -11,23 +11,22 @@ function cal (e){
 const cm=   size.value
 const kg=   weight.value
  
- if( cm === ''  ){
- alert('Lütfen boy giriniz')
- }
- else if(kg === '' ){
-    alert('Lütfen kilo giriniz') 
- }
- else if( cm>220 ){
-     alert('Geçerli boy giriniz')
- }
- else if( kg>400 ){
-     alert('Geçerli kilo giriniz')
- }
- else{
-   const valueUI=kg/((cm/100 )*(cm/100 ))
+if((cm==='')&& (kg==='') ){
+  alert('Lütfen geçerli bir değer giriniz!') 
+}
+else if((cm>250)  || (cm<80) ){
+  alert('Uyumlu bir değer giriniz!') 
+}
+else if((kg>350) || (kg<40) ){
+  alert('Uyumlu bir değer giriniz!') 
+}
+
+
+else if(((cm>100) && (cm<220)) && ((kg>40) && (kg<400))  ){
+  const valueUI=kg/((cm/100 )*(cm/100 ))
    valueUIV(valueUI.toFixed(1))
   
- } 
+}
  e.preventDefault();
 } 
  
